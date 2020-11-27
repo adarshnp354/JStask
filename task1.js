@@ -1,17 +1,18 @@
+var n
 function prime(n){
-    if(n===1){
-        return false
+    if (n===1){
+        return false;
     }
-    else if(n===2){
-        return true
+    else if(n === 2){
+        return true;
     }
     else{
-        for(var x=2;x<n;x++){
-            if(n%x===0){
-                return false
-            }
+    for(var x = 2; x < n; x++){
+        if(n % x === 0){
+            return false;
         }
-        return true
+    }
+        return true;
     }
 }
-console.log(prime(4))
+console.log(prime(35))
